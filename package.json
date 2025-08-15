@@ -1,6 +1,6 @@
 {
-  "name": "mercadinho-da-juju",
-  "version": "1.0.0",
+  "name": "mercadinho-da-gigi",
+  "version": "3.1.0.5",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

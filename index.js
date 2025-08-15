@@ -141,7 +141,7 @@ function layout({ title, content, showBack = false }) {
 <body>
 <header>
   <img class="logo" src="/img/logo.png" alt="logo" />
-  <div class="title">Mercadinho da Juju</div>
+  <div class="title">Mercadinho da Gigi</div>
 </header>
 <nav>
   <div class="wrap">
@@ -241,7 +241,7 @@ function homePage() {
   const slides = rec.map(p => `
     <div class="slide">
       <div class="info">
-        <div class="muted">Recomendado pela Juju</div>
+        <div class="muted">Recomendado pela Gigi</div>
         <div class="name" style="font-size:1.4rem">${escapeHtml(p.nome)}</div>
         <div class="muted">${escapeHtml(p.desc)}</div>
         <div class="row">
@@ -350,7 +350,7 @@ const content = `
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Carrinho - Mercadinho da Juju</title>
+<title>Carrinho - Mercadinho da Gigi</title>
 <style>
   body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 20px; }
   h2 { text-align: center; color: #333; }
@@ -511,13 +511,13 @@ function checkoutPage() {
       function finalizar(){
         const c = getCart();
         if(c.length===0){ toast('Carrinho vazio!'); return; }
-        toast('Pedido realizado! Obrigado 🧡');
+        toast('Pedido realizado! Obrigada 🧡 - Giovanna');
         localStorage.removeItem('carrinho');
         setTimeout(()=>{ window.location.href='/' }, 900);
       }
       (function resumo(){
         const c = getCart(); if(c.length===0){ document.getElementById('resumo').textContent='Carrinho vazio.'; return; }
-        // Monta catálogo rápido no client com nomes/preços (para um resumo simples):
+        
         const MAP = new Map(${JSON.stringify(Object.values(CATEGORIES).flat().map(p=>({id:p.id,nome:p.nome,preco:p.preco,unidade:p.unidade})))}.map(p=>[p.id,p]));
         let total=0;
         const html = c.map(i=>{ const p=MAP.get(i.id); const sub=p.preco*i.qtd; total+=sub; return \`\${i.qtd}x \${p.nome} — \${sub.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}\`; }).join('<br>');
