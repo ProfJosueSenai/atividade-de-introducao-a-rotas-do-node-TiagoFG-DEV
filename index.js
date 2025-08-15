@@ -83,10 +83,10 @@ function layout({ title, content, showBack = false }) {
   body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
   header{
     position:sticky;top:0;z-index:20;background:linear-gradient(90deg,var(--brand),#ffb84d);
-    color:#fff;padding:8px 10px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;gap:12px
+    color:#fff;padding:8px 10px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;gap:2px
   }
-  header img.logo{width:260px;height:160px}
-  header .title{font-size:1.6rem;font-weight:800;letter-spacing:.2px}
+  header img.logo{width:260px;height:110px}
+  header .title{font-size:1.1rem;font-weight:800;letter-spacing:.2px; margin: 20px}
   nav{
     position:sticky;top:64px;z-index:19;background:#fff3e0;box-shadow:var(--shadow);
   }
@@ -141,6 +141,7 @@ function layout({ title, content, showBack = false }) {
 <body>
 <header>
   <img class="logo" src="/img/logo.png" alt="logo" />
+  <br><br><br><br>
   <div class="title">Mercadinho da Gigi</div>
 </header>
 <nav>
