@@ -1,0 +1,19 @@
+{
+  "name": "mercadinho-da-juju",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfJosueSenai/atividade-de-introducao-a-rotas-do-node-TiagoFG-DEV.git"
+  },
+  "author": "Tiago Gregório",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProfJosueSenai/atividade-de-introducao-a-rotas-do-node-TiagoFG-DEV/issues"
+  },
+  "homepage": "https://github.com/ProfJosueSenai/atividade-de-introducao-a-rotas-do-node-TiagoFG-DEV#readme",
+  "description": ""
+}
